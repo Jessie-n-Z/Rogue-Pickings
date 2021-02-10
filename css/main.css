@@ -58,7 +58,7 @@ header {
 
 header h1 {
 	margin: 0;
-	padding: 30 15px;
+	padding: 35px 15px;
 	width: 100%;
 	text-align: center;
 	justify-content: center;
@@ -81,9 +81,10 @@ header nav ul li {
 	align-items: center;
 	display: flex;
 	font-weight: 700;
+	line-height: 30px;
 	font-size: 1em;
 	flex-flow: column;
-	line-height: 40px;
+	
 	padding: 10px;
 	text-transform: uppercase;
 }
@@ -102,7 +103,6 @@ header nav ul li a{
 }
 
 .bottom-section {
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,6 +172,10 @@ h3 {
 	
 }
 
+.section-two p {
+	padding-left: 0;
+}
+
 .menu {
 	align-items: left;
 	display: flex;
@@ -193,9 +197,8 @@ h3 {
 	color: #333;
 	display: flex;
 	font-size: 1em;
-	line-height: 21px;
+	line-height: 24px;
 	width: 100%;
-	padding-left: 0;
 }
 
 
