@@ -14,7 +14,7 @@ body {
 }
 
 .container{
-	max-width: 480px;
+	max-width: 1200px;
 	width: 90%;
 	display: flex;
   justify-content: center;
@@ -29,7 +29,7 @@ h1,h2,h3,h4 {
 	text-transform: uppercase;
 }
 h1 {
-	font-size: 1.8em;
+	font-size: 1.87em;
 	border-bottom: 3px solid #77a466;
 }
 h2 {
@@ -43,51 +43,50 @@ h4 {
 }
 
 p {
-	font-size: 1em;
+	font-size: .87em;
 	line-height: 21px;
-    padding: 0 30px;
 }
 
 header {
 	align-items: center;
 	display: flex;
-  flex-flow: column;
+  flex-flow: row wrap;
   justify-content: center;
+  text-align: center;
   width: 100%;
 }
 
 header h1 {
 	margin: 0;
-	padding: 35px 15px;
+	padding: 38px 20px 20px 20px; 
 	width: 100%;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
 }
+
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
+	padding: 20px 0; 
 	width: 100%;
 }
 header nav ul {
 	margin: 0;
 	padding: 0;
-	flex-flow: row wrap;
 }
 
 header nav ul li {
+	font-weight: 700;
+	font-size: .87em;
+	list-style: none;
+	padding: 10px 0;
+	text-transform: uppercase;
+	line-height: 30px;
 	align-items: center;
 	display: flex;
-	font-weight: 700;
-	line-height: 30px;
-	font-size: 1em;
 	flex-flow: column;
-	
-	padding: 10px;
-	text-transform: uppercase;
 }
+
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
@@ -125,7 +124,7 @@ header nav ul li a{
 }
 .main-title h3 {
 	text-align: left;
-	padding: 10px 20;
+	padding: 5px 0;
 	color: #77a466;
 }
 
@@ -134,7 +133,7 @@ h3 {
 }
 
 .main-title p {
-	padding: 0px 30px;
+	padding: 0;
 	font-size: 1em;
 	line-height: 25px;
 }
@@ -169,7 +168,6 @@ h3 {
 	align-items: center;
 	width: 100%;
 	padding-left: 0;
-	
 }
 
 .section-two p {
@@ -229,66 +227,111 @@ footer span {
 }
 
 /* ----------- Tablets larger than 768px wide ----------- */
-@media (min-width: 786px) {
-
-body {
+@media all and (min-width: 768px) {
 
 
-}
-
-
-
-.section-one {
-width: ;
-
-}
-
-.section-two,{
-	width: 50%;
-}
-
-.section-three  {
-	width: 100%;
-}
-
-.bottom-section {
-
-}
-
-}
-
-
-
-/* ----------- Monitors larger than 1200px wide ----------- */
-@media (min-width: 1200px) {
-	body {
-		
-	}
-
-.section-one,
-.section-two,
-.section-three {
-	width: 33.3%;
+.section-one, .section-two, .section-three {
+	border-top: none;
+	flex-basis: 30%;
 }
 
 .section-two {
 	border-left: 1px solid #eee;
 	border-right: 1px solid #eee;
+	padding-left: 0 20px;
+}
+
+.bottom-section {
+	align-items: flex-start;
+	border-top: 1px solid #eee;
+	display: flex;
+	justify-content: center;
+}
+
+.section-two h4,
+.section-three h4 {
+	padding: 0px 30px;
+	align-items: center;
+	width: 100%;
+}
+
+.section-two p {
+	padding: 0px 30px;
+	align-items: center;
+	width: 100%;
+}
+
+.section-three p {
+	padding: 0px 30px;
+	align-items: center;
+	width: 100%;
+}
+
+}
+
+
+/* ----------- Monitors larger than 1200px wide ----------- */
+@media all and (min-width: 1200px) {
+	
+body {
+	margin: 0;
+}
+
+header {
+	justify-content: space-between;
+	height: 110px;
+	margin: 0;
+	padding: 0;
+}
+
+header h1 {
+	width: 30%;
+	text-align: left;
+	border-bottom: none;
+	padding: 0;
+	margin: 0;
 }
 
 header nav {
-	padding: 46px 0;
-}
-
-
-.bottom-section {
-	justify-content: flex-start;
+	width: 50.5%;
 	display: flex;
+	justify-content: space-between;
+	
+	padding: 0;
 }
+
+header nav ul {
+	width: 34%;
+	display: flex;
+	justify-content: space-between;
+	
+	margin: 0;
+	padding: 0;
+}
+
+header nav ul li {
+	padding: 0 10px;xsv
+}
+
+.section-two h4,
+.section-three h4 {
+	padding: 0px 30px;
+	align-items: center;
+	width: 100%;	
+}
+
+.section-two p {
+	padding: 0px 30px;
+	align-items: center;
+	width: 100%;
+}
+
+.section-three p {
+	padding: 0px 30px;
+	align-items: center;
+	width: 100%;
+}
+
 
 }
 
-bottom-section
-section-one
-section-two
-section-three
